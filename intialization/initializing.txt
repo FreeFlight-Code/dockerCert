@@ -1,0 +1,11 @@
+--command to run and if not created it will create image
+docker run -d --name hello-broker -p 5672:5672 -p 8888:15672 -e RABBITMQ_DEFAULT_USER=admin -e RABBITMQ_DEFAULT_PASS=dockerRul3z! rabbitmq:3-management
+--command to see that my docker container is running
+docker ps
+--command to see that the image of my container was created
+docker images
+--command to see the status of my container
+docker inspect hello-broker
+
+
+

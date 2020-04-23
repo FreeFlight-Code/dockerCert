@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+      <title>Docker Demo Application</title>
+      <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <noscript>
+      <h2>Sorry! Your browser doesn't support Javascript</h2>
+    </noscript>
+
+    <div id="chat-page">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>Docker Hello Chat Demo</h2>
+            </div>
+            <div class="connecting">
+                Connecting...
+            </div>
+            <ul id="responseArea">
+
+            </ul>
+            <form id="nameForm" name="nameForm" onsubmit="return false;">
+                <div class="form-group">
+                    <div class="input-group clearfix">
+                        <input type="text" id="nameInput" placeholder="Type your name..." autocomplete="off" class="form-control"/>
+                        <button id="send" type="button" class="primary">Send</button>
+                        <button id="clear" type="button" class="default">Clear</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/sockjs.min.js"></script>
+    <script src="/js/stomp.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
